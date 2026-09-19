@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contacto · RIGGA Consultores 360°</title>
+<meta name="description" content="Contacta a RIGGA Consultores 360° para agendar un diagnóstico inicial en SSOMA, desarrollo web, Power BI o automatización con IA.">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,3 +36,91 @@
         <a href="rigga-tech-360.html">RIGGA Tech 360°</a>
         <ul class="dropdown">
           <li><a href="rigga-tech-360.html#safeinspect360">SafeInspect360°</a></li>
+          <li><a href="rigga-tech-360.html#mantenimiento">Gestión de Mantenimiento</a></li>
+        </ul>
+      </li>
+      <li><a href="portafolio.html">Portafolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="contacto.html">Solicitar diagnóstico</a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="hero-grid"></div>
+  <div class="wrap">
+    <div class="eyebrow-stamp">
+      <div class="stamp">
+        <div><b>RIGGA</b></div><div>CONTACTO</div>
+        <div>DIAGNÓSTICO</div><div>360°</div>
+      </div>
+    </div>
+    <h1>Hablemos de tu<br><em>operación</em></h1>
+    <p class="lead">Cuéntanos qué necesitas y te contactamos para agendar un diagnóstico inicial, presencial o remoto.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact">
+    <div class="reveal">
+      <h2>¿Con qué frente empezamos?</h2>
+      <p class="lead">Respondemos por WhatsApp o correo en menos de 24 horas hábiles.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/51947850896">
+          <span><span class="lbl">WhatsApp</span><br>+51 947 850 896</span>
+          <span>→</span>
+        </a>
+        <a href="mailto:fredramosquiroz@gmail.com">
+          <span><span class="lbl">Correo</span><br>fredramosquiroz@gmail.com</span>
+          <span>→</span>
+        </a>
+        <!-- TODO: agregar LinkedIn cuando se confirme el dato definitivo a publicar. -->
+      </div>
+    </div>
+
+    <form class="quote reveal" name="contacto" method="POST" data-netlify="true" netlify-honeypot="empresa-web">
+      <input type="hidden" name="form-name" value="contacto">
+      <p style="display:none;">
+        <label>No llenar: <input name="empresa-web"></label>
+      </p>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div>
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" name="empresa">
+      </div>
+      <div>
+        <label for="servicio">Servicio de interés</label>
+        <select id="servicio" name="servicio">
+          <option>Seguridad y Salud (SSOMA)</option>
+          <option>Desarrollo Web</option>
+          <option>Power BI</option>
+          <option>Automatización IA</option>
+          <option>SafeInspect360°</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar solicitud</button>
+      <p class="note">Al enviar este formulario aceptas ser contactado por RIGGA Consultores 360° para dar seguimiento a tu solicitud.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="logo">RIGGA<span>Consultores 360°</span></div>
+    <p>© 2026 · RIGGA Consultores 360° · Fred Geovanny Ramos Quiroz, Consultor SSOMA Especialista · Perú</p>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>

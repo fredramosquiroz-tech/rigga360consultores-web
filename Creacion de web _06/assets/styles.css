@@ -219,6 +219,35 @@ header {
   color: var(--accent);
 }
 
+/* ---------- Pestaña de menú activa (página actual) ---------- */
+.links > li > a {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 4px;
+}
+
+.links > li > a.active {
+  color: var(--accent);
+  font-weight: 700;
+  background: rgba(242, 183, 5, 0.14);
+  border-bottom-color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.dropdown li a.active {
+  background: var(--bg-panel-2);
+  color: var(--accent);
+}
+
+@media (max-width: 780px) {
+  .links.mobile-open > li > a.active {
+    color: var(--accent);
+    font-weight: 700;
+    background: rgba(242, 183, 5, 0.14);
+    border-bottom: 3px solid var(--accent);
+  }
+}
+
 /* Mobile nav toggle */
 .nav-toggle {
   display: none;

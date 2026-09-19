@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rigga-web",
+      "runtimeExecutable": "npx.cmd",
+      "runtimeArgs": ["--yes", "serve", "-l", "5643", "Creacion de web _06"],
+      "port": 5643
+    }
+  ]
+}
